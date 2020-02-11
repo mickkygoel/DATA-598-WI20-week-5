@@ -1,0 +1,49 @@
+---
+title: "name-of-my-vignette-file"
+
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+bibliography: bibliography.bib
+vignette: >
+  %\VignetteIndexEntry{name-of-my-vignette-file}
+  %\VignetteEngine{knitr::rmarkdown}ß
+  %\VignetteEncoding{UTF-8}
+---
+output: rmarkdown::html_vignette
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mysimplecompedium)
+```
+
+
+```{r, myfig, fig.cap = "a pic of Starwars logo", cache=TRUE}
+knitr::opts_chunk$set(cache.extra = R.version.string,
+                      cache.extra = R.version,
+                      cache.comments =  FALSE)
+# cached results are only applicable to a specific version of R
+knitr::include_graphics("https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200")
+```
+
+We can see in Star Wars logo in Figure \@ref(fig:myfig) ...
+
+These are my in-text citations regarding Star Wars.
+
+- For more information on Star Wars can be found in the book [@lucas1977star].
+- Means gives a new perspective on StarWars in this article [see @means1985star].
+
+```{r}
+knitr::read_chunk("getdatetime.R")
+```
+
+
+```{r get-date-time, echo=TRUE, include=TRUE}
+# Using variable from external code
+```
