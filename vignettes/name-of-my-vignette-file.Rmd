@@ -12,22 +12,22 @@ vignette: >
 ---
 output: rmarkdown::html_vignette
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
 
 ```{r setup}
 library(mysimplecompedium)
+knitr::opts_chunk$set(
+                        tidy = FALSE,
+                        collapse = TRUE,
+                        warning =  FALSE,
+                        message = FALSE,
+                        echo = TRUE,
+                        include = TRUE
+                      )
 ```
 
 
 ```{r, myfig, fig.cap = "a pic of Starwars logo", cache=TRUE}
-knitr::opts_chunk$set(cache.extra = R.version.string,
-                      cache.extra = R.version,
-                      cache.comments =  FALSE)
+
 # cached results are only applicable to a specific version of R
 knitr::include_graphics("https://lumiere-a.akamaihd.net/v1/images/og-generic_02031d2b.png?region=0%2C0%2C1200%2C1200")
 ```
@@ -44,6 +44,10 @@ knitr::read_chunk("getdatetime.R")
 ```
 
 
-```{r get-date-time, echo=TRUE, include=TRUE}
+```{r printdatetime, echo=TRUE, include=TRUE}
 # Using variable from external code
+datetime
 ```
+
+
+## Reference List

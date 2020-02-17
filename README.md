@@ -1,4 +1,5 @@
 # DATA-598-WI20-week-5
+R package creation
 
 # mysimplecompedium
 
@@ -26,5 +27,17 @@ library(mysimplecompedium)
 
 
 ## License
+
+**Text and Figures: ** MIT + file LICENSE
+
+**Code :** MIT + file LICENSE
+
+**Data :** MIT + file LICENSE
+
+## Code of Conduct
+If you want to contribute to this package, please check out the CODE_OF_CONDUCT.md file.
+
+
+
 
 
