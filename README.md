@@ -28,7 +28,7 @@ library(mysimplecompedium)
 
 ## License
 
-**Text and Figures: ** MIT + file LICENSE
+**Text and Figures:** MIT + file LICENSE
 
 **Code :** MIT + file LICENSE
 
